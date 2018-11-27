@@ -1,20 +1,30 @@
 package com.ngquangan.UI;
 
+import com.ngquangan.Server.ServerImpl;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.rmi.RemoteException;
 
 public class UIServer extends JFrame {
 
     JTextField txtUsername;
     JPasswordField txtPassword;
     JButton btnLogin;
+    ServerImpl server;
 
     public UIServer(String title) {
         super(title);
+        try {
+            server = new ServerImpl();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
         addControls();
         addEvents();
+
     }
 
 
@@ -77,9 +87,18 @@ public class UIServer extends JFrame {
 
                 if(!username.equals("") && !password.equals("")) {
 
-                    UIManage uiManage = new UIManage("Quản lý cán bộ");
-                    uiManage.showWindow();
-                    dispose();
+                    boolean checkLogin = server.login(username, password, true);
+
+                    if(checkLogin) {
+                        UIManage uiManage = new UIManage("Quản lý cán bộ");
+                        uiManage.showWindow();
+                        dispose();
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Sai username hoặc mật khẩu!");
+                    }
+
+
+
                 } else {
                     JOptionPane.showMessageDialog(null, "Vui lòng nhập username và mật khẩu!");
                 }

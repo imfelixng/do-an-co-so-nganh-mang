@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RMIInterface:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RMIInterface_jar</output-path>
+    <root id="archive" name="RMIInterface.jar">
+      <element id="module-output" name="RMIInterface" />
+    </root>
+  </artifact>
+</component>

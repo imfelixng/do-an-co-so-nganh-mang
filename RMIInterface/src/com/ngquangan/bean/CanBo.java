@@ -1,8 +1,9 @@
 package com.ngquangan.bean;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class CanBo {
+public class CanBo implements Serializable {
 
     private String maNV;
     private String teNV;
@@ -12,12 +13,13 @@ public class CanBo {
     private String email;
     private String phongBan;
     private String chucVu;
-
+    private String username;
+    private boolean online;
 
     public CanBo() {
     }
 
-    public CanBo(String maNV, String teNV, Date ngaySinh, boolean gioiTinh, String soDT, String email, String phongBan, String chucVu) {
+    public CanBo(String maNV, String teNV, Date ngaySinh, boolean gioiTinh, String soDT, String email, String phongBan, String chucVu, String username, boolean online) {
         this.maNV = maNV;
         this.teNV = teNV;
         this.ngaySinh = ngaySinh;
@@ -26,6 +28,8 @@ public class CanBo {
         this.email = email;
         this.phongBan = phongBan;
         this.chucVu = chucVu;
+        this.username = username;
+        this.online = online;
     }
 
     public String getMaNV() {
@@ -90,5 +94,21 @@ public class CanBo {
 
     public void setChucVu(String chucVu) {
         this.chucVu = chucVu;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public boolean isOnline() {
+        return online;
+    }
+
+    public void setOnline(boolean online) {
+        this.online = online;
     }
 }

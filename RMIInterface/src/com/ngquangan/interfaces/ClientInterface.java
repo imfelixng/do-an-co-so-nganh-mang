@@ -1,4 +1,4 @@
 package com.ngquangan.interfaces;
 
-public class ClientInterface {
+public interface ClientInterface {
 }
