@@ -21,7 +21,7 @@ public class UIAdd extends JFrame {
     }
 
     public void showWindow() {
-        setSize(600, 500);
+        setSize(400, 250);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
@@ -46,8 +46,12 @@ public class UIAdd extends JFrame {
         btnAddTay = new JButton("Thêm thủ công");
         pnChucNang.add(btnAddTay);
 
+        JPanel pnHuyBo = new JPanel();
+        pnHuyBo.setLayout(new FlowLayout());
+        pn.add(pnHuyBo);
+
         btnHuyBo = new JButton("Hủy bỏ");
-        pn.add(btnHuyBo);
+        pnHuyBo.add(btnHuyBo);
 
     }
 

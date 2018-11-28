@@ -8,17 +8,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6a751420-dffa-472a-aa34-b6ee51649d81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../RMIClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/bean/CanBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/bean/CanBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/interfaces/ClientInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/interfaces/ClientInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/interfaces/ServerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/interfaces/ServerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/RMIClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/RMIClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIServer/RMIServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/RMIServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/Server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/UI/UIServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/UI/UIServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/UI/UIServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/UI/UIServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/UI/UIAddTay$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/UI/UIAddTay$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/UI/UIAddTay$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/UI/UIAddTay$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/UI/UIAddTay.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/out/production/RMIServer/com/ngquangan/UI/UIAddTay.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIServer/src/com/ngquangan/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/src/com/ngquangan/Server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIServer/src/com/ngquangan/UI/UIServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/src/com/ngquangan/UI/UIServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIServer/src/com/ngquangan/UI/UIAddTay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/src/com/ngquangan/UI/UIAddTay.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,6 +59,7 @@
     <session id="-1240703077">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -98,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ngquangan/interfaces/ServerInterface.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -110,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ngquangan/bean/CanBo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="581">
@@ -254,12 +253,12 @@
       <updated>1543228288290</updated>
       <workItem from="1543228292055" duration="581000" />
       <workItem from="1543288063972" duration="1223000" />
-      <workItem from="1543291192322" duration="4724000" />
+      <workItem from="1543291192322" duration="5891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6528000" />
+    <option name="totallyTimeSpent" value="7695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="777" y="23" width="823" height="826" extended-state="0" />
@@ -316,6 +315,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/interfaces/ServerInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ngquangan/bean/CanBo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
@@ -325,16 +334,6 @@
             <element signature="e#2251#2252#0" expanded="true" />
             <element signature="e#2296#2297#0" expanded="true" />
             <element signature="e#2332#2333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/interfaces/ServerInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

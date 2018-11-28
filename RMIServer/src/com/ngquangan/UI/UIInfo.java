@@ -1,9 +1,13 @@
 package com.ngquangan.UI;
 
+import com.ngquangan.Server.ServerImpl;
+import com.ngquangan.bean.CanBo;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.rmi.RemoteException;
 
 public class UIInfo extends JFrame {
 
@@ -16,13 +20,27 @@ public class UIInfo extends JFrame {
     JTextField txtEmail;
     JTextField txtPhongBan;
     JTextField txtChucVu;
+    JTextField txtUsername;
 
     JButton btnCapNhat;
     JButton btnTroVe;
+    String username;
+    ServerImpl server;
+    CanBo cb = null;
 
-    public UIInfo(String title) {
+    public UIInfo(String title, String username) {
 
         super(title);
+        this.username = username;
+
+        try {
+            server = new ServerImpl();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+        cb = server.getInfo(username);
+
         addControls();
         addEvents();
     }
@@ -42,12 +60,6 @@ public class UIInfo extends JFrame {
         JPanel pn = new JPanel();
         pn.setLayout(new BorderLayout());
         con.add(pn);
-
-        JPanel pnTop = new JPanel();
-        pn.add(pnTop, BorderLayout.NORTH);
-
-        lblXinChao = new JLabel("Xin Chào: ");
-        pnTop.add(lblXinChao);
 
         JPanel pnCenter = new JPanel();
         pn.add(pnCenter, BorderLayout.CENTER);
@@ -148,6 +160,17 @@ public class UIInfo extends JFrame {
         txtChucVu.setBackground(Color.LIGHT_GRAY);
         pnChucVu.add(txtChucVu);
 
+        JPanel pnUsername = new JPanel();
+        pnUsername.setLayout(new FlowLayout());
+        pnCenter.add(pnUsername);
+
+        JLabel lblUsername = new JLabel("Username: ");
+        pnUsername.add(lblUsername);
+
+        txtUsername = new JTextField(30);
+        txtUsername.setEditable(false);
+        txtUsername.setBackground(Color.LIGHT_GRAY);
+        pnUsername.add(txtUsername);
 
         JPanel pnBottom = new JPanel();
         pn.add(pnBottom, BorderLayout.SOUTH);
@@ -162,6 +185,18 @@ public class UIInfo extends JFrame {
         btnTroVe = new JButton("Trở về");
         pnButton.add(btnTroVe);
 
+        //set Data
+
+        txtMaSo.setText(cb.getMaNV());
+        txtHoTen.setText(cb.getTeNV());
+        txtNgaySinh.setText(cb.getNgaySinh().toString());
+        txtGioiTinh.setText(cb.isGioiTinh() ? "Nam" : "Nữ");
+        txtSoDT.setText(cb.getSoDT());
+        txtEmail.setText(cb.getEmail());
+        txtPhongBan.setText(cb.getPhongBan());
+        txtChucVu.setText(cb.getChucVu());
+        txtUsername.setText(cb.getUsername());
+
     }
 
     public void addEvents() {
@@ -169,7 +204,7 @@ public class UIInfo extends JFrame {
         btnCapNhat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                UIEditInfo uiEditInfo = new UIEditInfo("Cập nhật thông tin cán bộ");
+                UIEditInfo uiEditInfo = new UIEditInfo("Cập nhật thông tin cán bộ", username);
                 uiEditInfo.showWindow();
                 dispose();
             }

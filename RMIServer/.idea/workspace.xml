@@ -3,17 +3,50 @@
   <component name="ChangeListManager">
     <list default="true" id="189a5ddd-e01a-44de-a152-27060bdd56a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../RMIClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/RMIClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/RMIClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/Client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIEditInfo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIEditInfo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIEditInfo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIEditInfo$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIEditInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIEditInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIInfo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIInfo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIInfo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIInfo$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/out/production/RMIClient/com/ngquangan/UI/UIInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIEditInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIEditInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIInterface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIInterface/src/com/ngquangan/bean/CanBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIInterface/src/com/ngquangan/bean/CanBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIInterface/src/com/ngquangan/interfaces/ClientInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIInterface/src/com/ngquangan/interfaces/ClientInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIInterface/src/com/ngquangan/interfaces/ServerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIInterface/src/com/ngquangan/interfaces/ServerInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RMIServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RMIServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/Server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/Server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/Server/ServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/Server/ServerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAdd$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAdd$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAdd$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAdd$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAdd$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAdd$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAddFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAddFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAddTay$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAddTay$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAddTay$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAddTay$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAddTay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIAddTay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIEditInfo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIEditInfo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIEditInfo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIEditInfo$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIEditInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIEditInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIInfo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIInfo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIInfo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIInfo$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIManage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIManage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIManage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIManage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIManage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIManage$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIManage$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIManage$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIServer/com/ngquangan/UI/UIManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/Server/ServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/Server/ServerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIManage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,33 +119,39 @@
     <session id="-386339429">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="4" />
+          <entry key="class" value="3" />
+          <entry key="java" value="22" />
+          <entry key="nhanvien" value="2" />
           <entry key="sql" value="1" />
-          <entry key="user" value="1" />
+          <entry key="user" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="1" />
-          <entry key="JAVA" value="4" />
+          <entry key="CLASS" value="3" />
+          <entry key="Database Element" value="6" />
+          <entry key="JAVA" value="22" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="40" />
-          <entry key="java" value="1255" />
+          <entry key="java" value="9745" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1255" />
+          <entry key="JAVA" value="9745" />
           <entry key="Scratch" value="40" />
         </counts>
       </usages-collector>
@@ -120,23 +159,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+            <state relative-caret-position="349">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#addControls#0;class#UIServer#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Server/Server.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIAddFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+            <state relative-caret-position="2250">
+              <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addControls#0;class#UIAddFile#0" />
+                <element signature="e#2039#2040#0" expanded="true" />
+                <element signature="e#2098#2099#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Funtional/ReadExel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-25">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,31 +200,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIManage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="157" column="36" selection-start-line="157" selection-start-column="36" selection-end-line="157" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Server/ServerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#409#410#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#549#550#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-              </folding>
+        <entry file="das://4a349953-1c55-461d-9531-42e48aba9ee5/schema/quanlycanbo/table/nhanvien">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -181,20 +215,6 @@
               <filtering enabled="true" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Server/ConnectDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a349953-1c55-461d-9531-42e48aba9ee5/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -212,16 +232,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/ngquangan/Server/ConnectDB.java" />
+        <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIServer.java" />
+        <option value="$PROJECT_DIR$/src/com/ngquangan/Server/ServerImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/ngquangan/Server/Server.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIInfo.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIManage.java" />
-        <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddFile.java" />
+        <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIAdd.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java" />
-        <option value="$PROJECT_DIR$/src/com/ngquangan/Server/ConnectDB.java" />
-        <option value="$PROJECT_DIR$/src/com/ngquangan/Server/Server.java" />
-        <option value="$PROJECT_DIR$/src/com/ngquangan/Server/ServerImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIServer.java" />
+        <option value="$PROJECT_DIR$/src/com/ngquangan/Funtional/ReadExel.java" />
+        <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddFile.java" />
       </list>
     </option>
   </component>
@@ -232,9 +253,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="211" />
-    <option name="y" value="32" />
-    <option name="width" value="1667" />
+    <option name="x" value="327" />
+    <option name="y" value="23" />
+    <option name="width" value="1127" />
     <option name="height" value="826" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -245,8 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,6 +289,13 @@
               <item name="RMIServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ngquangan" type="462c0819:PsiDirectoryNode" />
+              <item name="Funtional" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RMIServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RMIServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ngquangan" type="462c0819:PsiDirectoryNode" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,21 +313,26 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Course" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543301156004" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543403505653" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.30561122" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RunDashboard">
@@ -349,28 +380,28 @@
       <workItem from="1543228143623" duration="704000" />
       <workItem from="1543245380903" duration="2817000" />
       <workItem from="1543282096850" duration="5629000" />
-      <workItem from="1543291554535" duration="5431000" />
+      <workItem from="1543291554535" duration="11509000" />
+      <workItem from="1543337543292" duration="597000" />
+      <workItem from="1543366627906" duration="25140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14581000" />
+    <option name="totallyTimeSpent" value="46396000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="211" y="32" width="1667" height="826" extended-state="0" />
-    <editor active="true" />
+    <frame x="327" y="23" width="1127" height="826" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19138461" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26175115" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32970026" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32833788" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32561308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -380,6 +411,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32833788" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32970026" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -389,7 +421,7 @@
       <window_info anchor="right" id="Mongo Explorer" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="SciView" order="8" />
-      <window_info anchor="right" id="Database" order="9" visible="true" weight="0.14523077" />
+      <window_info anchor="right" id="Database" order="9" visible="true" weight="0.26359448" />
       <window_info anchor="right" id="Maven Projects" order="10" />
     </layout>
   </component>
@@ -405,10 +437,63 @@
     <entry file="file://$PROJECT_DIR$/../../../../DA/innerdisk/NetworkProject/RMI-Network-Interface/src/rmi/network/bean/client.java" />
     <entry file="file://$PROJECT_DIR$/../../../../DA/innerdisk/NetworkProject/RMI-Network-Interface/src/rmi/network/common/AddClient.java" />
     <entry file="file://$PROJECT_DIR$/../../../../DA/innerdisk/NetworkProject/RMI-Network-Server/src/rmi/network/implement/ClientMessage.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIInfo.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a349953-1c55-461d-9531-42e48aba9ee5/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/mysql/mysql-connector-java-8.0.12.jar!/com/mysql/cj/jdbc/ClientPreparedStatement.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="171" column="81" selection-start-line="171" selection-start-column="81" selection-end-line="171" selection-end-column="81" />
+        <state relative-caret-position="361">
+          <caret line="281" selection-start-line="281" selection-end-line="281" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../RMIInterface/out/artifacts/RMIInterface_jar/RMIInterface.jar!/com/ngquangan/bean/CanBo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1230">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/rmi/Naming.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="194" column="27" selection-start-line="194" selection-start-column="27" selection-end-line="194" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Server/ConnectDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Server/ServerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="140" column="6" lean-forward="true" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#login#0;class#ServerImpl#0" />
+            <element signature="method#logout#0;class#ServerImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="241" column="55" lean-forward="true" selection-start-line="241" selection-start-column="55" selection-end-line="241" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -417,8 +502,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIAdd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="108">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="189" selection-start-line="189" selection-end-line="197" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -427,41 +522,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="161" selection-start-line="161" selection-end-line="162" selection-end-column="2" />
+        <state relative-caret-position="-48">
+          <caret line="232" column="48" lean-forward="true" selection-start-line="225" selection-start-column="20" selection-end-line="232" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIAddFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="151" column="21" selection-start-line="151" selection-start-column="21" selection-end-line="151" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a349953-1c55-461d-9531-42e48aba9ee5/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Server/ConnectDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -472,48 +537,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Server/ServerImpl.java">
+    <entry file="das://4a349953-1c55-461d-9531-42e48aba9ee5/schema/quanlycanbo/table/nhanvien">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="581">
+          <caret line="238" column="25" lean-forward="true" selection-start-line="188" selection-start-column="20" selection-end-line="238" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIManage.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Funtional/ReadExel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="157" column="36" selection-start-line="157" selection-start-column="36" selection-end-line="157" selection-end-column="36" />
+        <state relative-caret-position="-25">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIAddFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addControls#0;class#UIAddFile#0" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="method#addControls#0;class#UIServer#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/Server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        <state relative-caret-position="349">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#addControls#0;class#UIServer#0" />
           </folding>
         </state>
       </provider>
@@ -595,11 +665,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>RMIInterface</last-edited>
+          <last-edited>commons-compress-1.18</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.30561122" />
               </list>
             </option>
           </splitter-proportions>

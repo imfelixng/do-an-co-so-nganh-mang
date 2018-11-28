@@ -9,5 +9,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="mysql-connector-java-8.0.12" level="project" />
     <orderEntry type="library" name="RMIInterface" level="project" />
+    <orderEntry type="library" name="poi-4.0.0" level="project" />
+    <orderEntry type="library" name="poi-lib" level="project" />
+    <orderEntry type="library" name="poi-ooxml-lib" level="project" />
+    <orderEntry type="library" name="commons-compress-1.18" level="project" />
   </component>
 </module>
