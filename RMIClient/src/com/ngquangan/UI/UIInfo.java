@@ -1,9 +1,16 @@
 package com.ngquangan.UI;
 
+import com.ngquangan.bean.CanBo;
+import com.ngquangan.interfaces.ServerInterface;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 
 public class UIInfo extends JFrame {
 
@@ -20,9 +27,40 @@ public class UIInfo extends JFrame {
     JButton btnCapNhat;
     JButton btnLogout;
 
-    public UIInfo(String title) {
+    Remote lookup;
+    ServerInterface serverInterface;
+    CanBo cb = null;
+    String username;
 
+    public  UIInfo(String title, String username) {
         super(title);
+        this.username = username;
+        try {
+            lookup = Naming.lookup("rmi://localhost/quanlycanbo");
+            serverInterface = (ServerInterface) lookup;
+
+            //get Data
+
+            UIClient uiClient = new UIClient("");
+            if(!username.equals("")) {
+                try {
+                    cb = serverInterface.getInfo(username);
+
+
+
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        } catch (NotBoundException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
         addControls();
         addEvents();
     }
@@ -162,6 +200,19 @@ public class UIInfo extends JFrame {
         btnLogout = new JButton("Log out");
         pnButton.add(btnLogout);
 
+
+        //setData
+
+        lblXinChao.setText(lblXinChao.getText() + cb.getTeNV() + "");
+        txtMaSo.setText(cb.getMaNV());
+        txtHoTen.setText(cb.getTeNV());
+        txtNgaySinh.setText(cb.getNgaySinh().toString());
+        txtGioiTinh.setText(cb.isGioiTinh() ? "Nam" : "Nữ");
+        txtSoDT.setText(cb.getSoDT());
+        txtEmail.setText(cb.getEmail());
+        txtPhongBan.setText(cb.getPhongBan());
+        txtChucVu.setText(cb.getChucVu());
+
     }
 
     public void addEvents() {
@@ -169,7 +220,7 @@ public class UIInfo extends JFrame {
         btnCapNhat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                UIEditInfo uiEditInfo = new UIEditInfo("Cập nhật thông tin");
+                UIEditInfo uiEditInfo = new UIEditInfo("Cập nhật thông tin", username);
                 uiEditInfo.showWindow();
                 dispose();
             }
@@ -178,10 +229,34 @@ public class UIInfo extends JFrame {
         btnLogout.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                UIClient uiClient = new UIClient("Đăng nhập");
-                uiClient.showWindow();
-                dispose();
+                try {
+                    boolean checkLogout = serverInterface.logout(username);
+                    if(checkLogout) {
+                        UIClient uiClient = new UIClient("Đăng nhập");
+                        uiClient.showWindow();
+                        dispose();
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Đã xảy ra lỗi, vui lòng thử lại sau!");
+                    }
+                } catch (RemoteException e1) {
+                    e1.printStackTrace();
+                }
             }
+        });
+
+        this.addWindowListener(new WindowAdapter() {
+
+
+            @Override
+            public void windowClosing(WindowEvent e) {
+                try {
+                    serverInterface.logout(username);
+                } catch (RemoteException e1) {
+                    e1.printStackTrace();
+                }
+            }
+
+
         });
 
     }

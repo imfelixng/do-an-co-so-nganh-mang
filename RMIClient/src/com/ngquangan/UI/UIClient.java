@@ -1,22 +1,42 @@
 package com.ngquangan.UI;
 
+import com.ngquangan.interfaces.ServerInterface;
 import sun.tools.jps.Jps;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 
 public class UIClient extends JFrame {
 
     JTextField txtUsername;
     JPasswordField txtPassword;
     JButton btnLogin;
+    Remote lookup;
+    ServerInterface serverInterface;
 
     public UIClient(String title) {
         super(title);
         addControls();
         addEvents();
+
+        try {
+            lookup = Naming.lookup("rmi://localhost/quanlycanbo");
+            serverInterface = (ServerInterface) lookup;
+        } catch (NotBoundException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void showWindow() {
@@ -78,10 +98,22 @@ public class UIClient extends JFrame {
 
                 if(!username.equals("") && !password.equals("")) {
 
-                    UIInfo uiInfo = new UIInfo("Thông tin cá nhân");
-                    uiInfo.showWindow();
+                    try {
+                        boolean checkLogin = serverInterface.login(username, password, false);
 
-                    dispose();
+                        if(checkLogin) {
+                            UIInfo uiInfo = new UIInfo("Thông tin cá nhân", username);
+                            uiInfo.showWindow();
+                            dispose();
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Sai username hoặc mật khẩu!");
+                        }
+
+                    } catch (RemoteException e1) {
+                        e1.printStackTrace();
+                    }
+
+
 
 
                 } else {
@@ -92,4 +124,6 @@ public class UIClient extends JFrame {
         });
 
     }
+
+
 }
