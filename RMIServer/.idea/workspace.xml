@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="189a5ddd-e01a-44de-a152-27060bdd56a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../RMIClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/RMIClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/RMIClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIEditInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIEditInfo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -192,6 +193,10 @@
               <item name="ngquangan" type="462c0819:PsiDirectoryNode" />
               <item name="UI" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RMIServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -268,18 +273,18 @@
       <workItem from="1544237508355" duration="397000" />
       <workItem from="1544403063525" duration="667000" />
       <workItem from="1544404129159" duration="351000" />
-      <workItem from="1544678600399" duration="2302000" />
+      <workItem from="1544678600399" duration="2839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53135000" />
+    <option name="totallyTimeSpent" value="53672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="23" width="1038" height="826" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26104417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26104417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -288,7 +293,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32561308" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32561308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
