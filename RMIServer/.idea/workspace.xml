@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="189a5ddd-e01a-44de-a152-27060bdd56a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../RMIClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIClient/RMIClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/RMIClient.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIEditInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/src/com/ngquangan/UI/UIEditInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RMIServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RMIServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,7 +91,7 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="Database Element" value="8" />
-          <entry key="JAVA" value="24" />
+          <entry key="JAVA" value="26" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -100,7 +103,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10014" />
+          <entry key="JAVA" value="10040" />
           <entry key="Scratch" value="40" />
         </counts>
       </usages-collector>
@@ -111,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
+            <state relative-caret-position="356">
+              <caret line="216" column="32" selection-start-line="216" selection-start-column="32" selection-end-line="216" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -141,6 +144,7 @@
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIAdd.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/Funtional/ReadExel.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddFile.java" />
+        <option value="$PROJECT_DIR$/src/com/ngquangan/UI/DateLabelFormatter.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" />
       </list>
@@ -152,10 +156,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="68" />
     <option name="y" value="23" />
-    <option name="width" value="1038" />
+    <option name="width" value="1212" />
     <option name="height" value="826" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -211,7 +215,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543410170644" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544685119325" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -273,18 +277,18 @@
       <workItem from="1544237508355" duration="397000" />
       <workItem from="1544403063525" duration="667000" />
       <workItem from="1544404129159" duration="351000" />
-      <workItem from="1544678600399" duration="2839000" />
+      <workItem from="1544678600399" duration="3301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53672000" />
+    <option name="totallyTimeSpent" value="54134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="23" width="1038" height="826" extended-state="1" />
+    <frame x="68" y="23" width="1212" height="826" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26104417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22222222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -442,17 +446,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/DateLabelFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        <state relative-caret-position="209">
+          <caret line="230" column="104" selection-start-line="230" selection-start-column="104" selection-end-line="230" selection-end-column="104" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
+        <state relative-caret-position="356">
+          <caret line="216" column="32" selection-start-line="216" selection-start-column="32" selection-end-line="216" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -533,7 +547,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>commons-compress-1.18</last-edited>
+          <last-edited>jdatepicker-1.3.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

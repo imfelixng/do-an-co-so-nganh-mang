@@ -3,6 +3,9 @@ package com.ngquangan.UI;
 import com.ngquangan.Server.ConnectDB;
 import com.ngquangan.Server.ServerImpl;
 import com.ngquangan.bean.CanBo;
+import org.jdatepicker.impl.JDatePanelImpl;
+import org.jdatepicker.impl.JDatePickerImpl;
+import org.jdatepicker.impl.UtilDateModel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,12 +19,14 @@ import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Properties;
 
 public class UIEditInfo extends JFrame {
 
     JTextField txtMaSo;
     JTextField txtHoTen;
-    JTextField txtNgaySinh;
     JTextField txtSoDT;
     JTextField txtEmail;
     JTextField txtPhongBan;
@@ -30,6 +35,8 @@ public class UIEditInfo extends JFrame {
 
     JRadioButton radNam;
     JRadioButton radNu;
+
+    JDatePickerImpl datePicker;
 
     JButton btnCapNhat;
     JButton btnHuyBo;
@@ -103,8 +110,15 @@ public class UIEditInfo extends JFrame {
         JLabel lblNgaySinh = new JLabel("Ngày Sinh: ");
         pnNgaySinh.add(lblNgaySinh);
 
-        txtNgaySinh = new JTextField(30);
-        pnNgaySinh.add(txtNgaySinh);
+        UtilDateModel model = new UtilDateModel();
+        Properties p = new Properties();
+        p.put("text.today", "Today");
+        p.put("text.month", "Month");
+        p.put("text.year", "Year");
+        JDatePanelImpl datePanel = new JDatePanelImpl(model, p);
+        datePicker = new JDatePickerImpl(datePanel, new DateLabelFormatter());
+
+        pnNgaySinh.add(datePicker);
 
         JPanel pnGioiTinh = new JPanel();
         pnGioiTinh.setLayout(new BoxLayout(pnGioiTinh, BoxLayout.X_AXIS));
@@ -191,11 +205,16 @@ public class UIEditInfo extends JFrame {
 
         txtMaSo.setText(cb.getMaNV());
         txtHoTen.setText(cb.getTeNV());
-        txtNgaySinh.setText(cb.getNgaySinh().toString());
         txtSoDT.setText(cb.getSoDT());
         txtEmail.setText(cb.getEmail());
         txtPhongBan.setText(cb.getPhongBan());
         txtChucVu.setText(cb.getChucVu());
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(cb.getNgaySinh());
+
+        model.setDate(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
+        model.setSelected(true);
 
         if(cb.isGioiTinh()) {
             radNam.setSelected(true);
@@ -211,7 +230,6 @@ public class UIEditInfo extends JFrame {
             public void actionPerformed(ActionEvent e) {
 
                 String hoten = txtHoTen.getText().trim();
-                String ngaysinh = txtNgaySinh.getText().trim();
                 String sodt = txtSoDT.getText().trim();
                 String email = txtEmail.getText().trim();
                 String phongban = txtPhongBan.getText().trim();
@@ -219,7 +237,7 @@ public class UIEditInfo extends JFrame {
                 String password = txtPassword.getText().trim();
 
                 if(
-                        !hoten.equals("") && !ngaysinh.equals("") && !sodt.equals("")
+                        !hoten.equals("") && !sodt.equals("")
                                 && !email.equals("") && !phongban.equals("") && !chucvu.equals("")
                 ) {
 
@@ -233,13 +251,8 @@ public class UIEditInfo extends JFrame {
                         gt = false;
                     }
 
-                    DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                    java.util.Date date = null;
-                    try {
-                        date = formatter.parse(ngaysinh);
-                    } catch (ParseException e1) {
-                        e1.printStackTrace();
-                    }
+                    Date selectedDate = (Date) datePicker.getModel().getValue();
+                    java.sql.Date date = new java.sql.Date(selectedDate.getTime());
 
                     CanBo canBo = new CanBo();
 

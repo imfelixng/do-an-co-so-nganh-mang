@@ -1,6 +1,9 @@
 package com.ngquangan.UI;
 
 import com.ngquangan.Server.ConnectDB;
+import org.jdatepicker.impl.JDatePanelImpl;
+import org.jdatepicker.impl.JDatePickerImpl;
+import org.jdatepicker.impl.UtilDateModel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,11 +13,12 @@ import java.sql.*;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Properties;
 
 public class UIAddTay extends JFrame {
 
     JTextField txtHoTen;
-    JTextField txtNgaySinh;
+
     JTextField txtSoDT;
     JTextField txtEmail;
     JTextField txtPhongBan;
@@ -24,6 +28,8 @@ public class UIAddTay extends JFrame {
 
     JRadioButton radNam;
     JRadioButton radNu;
+
+    JDatePickerImpl datePicker;
 
     JButton btnThem;
     JButton btnHuyBo;
@@ -76,8 +82,15 @@ public class UIAddTay extends JFrame {
         JLabel lblNgaySinh = new JLabel("Ngày Sinh: ");
         pnNgaySinh.add(lblNgaySinh);
 
-        txtNgaySinh = new JTextField(30);
-        pnNgaySinh.add(txtNgaySinh);
+        UtilDateModel model = new UtilDateModel();
+        Properties p = new Properties();
+        p.put("text.today", "Today");
+        p.put("text.month", "Month");
+        p.put("text.year", "Year");
+        JDatePanelImpl datePanel = new JDatePanelImpl(model, p);
+        datePicker = new JDatePickerImpl(datePanel, new DateLabelFormatter());
+
+        pnNgaySinh.add(datePicker);
 
         JPanel pnGioiTinh = new JPanel();
         pnGioiTinh.setLayout(new BoxLayout(pnGioiTinh, BoxLayout.X_AXIS));
@@ -182,7 +195,6 @@ public class UIAddTay extends JFrame {
             public void actionPerformed(ActionEvent e) {
 
                 String hoten = txtHoTen.getText().trim();
-                String ngaysinh = txtNgaySinh.getText().trim();
                 String sodt = txtSoDT.getText().trim();
                 String email = txtEmail.getText().trim();
                 String phongban = txtPhongBan.getText().trim();
@@ -193,7 +205,7 @@ public class UIAddTay extends JFrame {
                 String macanbo = "cb_" + System.currentTimeMillis();
 
                 if(
-                        !hoten.equals("") && !ngaysinh.equals("") && !sodt.equals("")
+                        !hoten.equals("") && !sodt.equals("")
                         && !email.equals("") && !phongban.equals("") && !chucvu.equals("") && !username.equals("")
                         && !password.equals("")
                 ) {
@@ -216,17 +228,15 @@ public class UIAddTay extends JFrame {
                             gt = false;
                         }
 
-                        DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-                        java.util.Date date = formatter.parse(ngaysinh);
-                        long dateInLong = date.getTime();
-                        java.sql.Date dateDB = new java.sql.Date(dateInLong);
+                        java.util.Date selectedDate = (java.util.Date) datePicker.getModel().getValue();
+                        java.sql.Date date = new java.sql.Date(selectedDate.getTime());
 
                         String sql = "INSERT INTO nhanvien VALUES (?,?,?,?,?,?,?,?,?,?)";
 
                         preparedStatement = cnn.prepareStatement(sql);
                         preparedStatement.setString(1, macanbo);
                         preparedStatement.setString(2, hoten);
-                        preparedStatement.setDate(3, dateDB);
+                        preparedStatement.setDate(3, date);
                         preparedStatement.setBoolean(4, gt);
                         preparedStatement.setString(5, sodt);
                         preparedStatement.setString(6, email);
@@ -261,8 +271,6 @@ public class UIAddTay extends JFrame {
                     } catch (ClassNotFoundException e1) {
                         e1.printStackTrace();
                     } catch (SQLException e1) {
-                        e1.printStackTrace();
-                    } catch (ParseException e1) {
                         e1.printStackTrace();
                     } finally {
                         try {

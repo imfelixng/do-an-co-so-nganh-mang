@@ -258,18 +258,7 @@ public class UIEditInfo extends JFrame {
                     }
 
 
-
-//                    DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-//                    java.util.Date date = null;
-//                    try {
-//                        date = formatter.parse(ngaysinh);
-//                    } catch (ParseException e1) {
-//                        e1.printStackTrace();
-//                    }
-
-
                     Date selectedDate = (Date) datePicker.getModel().getValue();
-
                     java.sql.Date date = new java.sql.Date(selectedDate.getTime());
 
 
