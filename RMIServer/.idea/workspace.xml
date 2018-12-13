@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189a5ddd-e01a-44de-a152-27060bdd56a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,7 +87,7 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="Database Element" value="8" />
-          <entry key="JAVA" value="23" />
+          <entry key="JAVA" value="24" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -98,7 +99,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10002" />
+          <entry key="JAVA" value="10014" />
           <entry key="Scratch" value="40" />
         </counts>
       </usages-collector>
@@ -107,10 +108,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="216" column="25" selection-start-line="216" selection-start-column="25" selection-end-line="216" selection-end-column="25" />
+            <state relative-caret-position="161">
+              <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
             </state>
           </provider>
         </entry>
@@ -136,11 +137,11 @@
         <option value="$PROJECT_DIR$/src/com/ngquangan/Server/Server.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIInfo.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIManage.java" />
-        <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIAdd.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/Funtional/ReadExel.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddFile.java" />
         <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java" />
+        <option value="$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java" />
       </list>
     </option>
   </component>
@@ -150,7 +151,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="68" />
     <option name="y" value="23" />
     <option name="width" value="1038" />
@@ -267,15 +268,15 @@
       <workItem from="1544237508355" duration="397000" />
       <workItem from="1544403063525" duration="667000" />
       <workItem from="1544404129159" duration="351000" />
-      <workItem from="1544678600399" duration="1402000" />
+      <workItem from="1544678600399" duration="2302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52235000" />
+    <option name="totallyTimeSpent" value="53135000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="23" width="1038" height="826" extended-state="0" />
+    <frame x="68" y="23" width="1038" height="826" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.26104417" />
@@ -287,7 +288,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32561308" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32561308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -390,13 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="232" column="48" lean-forward="true" selection-start-line="225" selection-start-column="20" selection-end-line="232" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://4a349953-1c55-461d-9531-42e48aba9ee5/schema/quanlycanbo/table/nhanvien">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -445,8 +439,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIAddTay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="216" column="25" selection-start-line="216" selection-start-column="25" selection-end-line="216" selection-end-column="25" />
+        <state relative-caret-position="166">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
         </state>
       </provider>
     </entry>

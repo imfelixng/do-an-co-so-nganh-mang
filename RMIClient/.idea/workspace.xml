@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fd5fba30-ce91-4595-aa8b-050b24b00126" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../RMIServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIServer/src/com/ngquangan/UI/UIAddTay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/src/com/ngquangan/UI/UIAddTay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIServer/src/com/ngquangan/UI/UIEditInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIServer/src/com/ngquangan/UI/UIEditInfo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -125,8 +125,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="235" selection-start-line="235" selection-end-line="242" selection-end-column="21" />
+            <state relative-caret-position="258">
+              <caret line="276" column="17" lean-forward="true" selection-start-line="276" selection-start-column="17" selection-end-line="276" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,7 +175,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="769" />
+    <option name="x" value="775" />
     <option name="y" value="23" />
     <option name="width" value="831" />
     <option name="height" value="826" />
@@ -253,15 +253,15 @@
       <workItem from="1544237655680" duration="250000" />
       <workItem from="1544402444985" duration="1264000" />
       <workItem from="1544404128667" duration="357000" />
-      <workItem from="1544676780748" duration="2053000" />
+      <workItem from="1544676780748" duration="2946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31735000" />
+    <option name="totallyTimeSpent" value="32628000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="769" y="23" width="831" height="826" extended-state="0" />
+    <frame x="775" y="23" width="831" height="826" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2475512" />
@@ -342,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ngquangan/UI/UIEditInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="235" selection-start-line="235" selection-end-line="242" selection-end-column="21" />
+        <state relative-caret-position="258">
+          <caret line="276" column="17" lean-forward="true" selection-start-line="276" selection-start-column="17" selection-end-line="276" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
