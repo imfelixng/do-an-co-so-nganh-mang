@@ -21,11 +21,13 @@ public class UIEditInfo extends JFrame {
     JTextField txtMaSo;
     JTextField txtHoTen;
     JTextField txtNgaySinh;
-    JTextField txtGioiTinh;
     JTextField txtSoDT;
     JTextField txtEmail;
     JTextField txtPhongBan;
     JTextField txtChucVu;
+
+    JRadioButton radNam;
+    JRadioButton radNu;
 
     JButton btnCapNhat;
     JButton btnHuyBo;
@@ -124,14 +126,21 @@ public class UIEditInfo extends JFrame {
         pnNgaySinh.add(txtNgaySinh);
 
         JPanel pnGioiTinh = new JPanel();
-        pnGioiTinh.setLayout(new FlowLayout());
+        pnGioiTinh.setLayout(new BoxLayout(pnGioiTinh, BoxLayout.X_AXIS));
         pnCenter.add(pnGioiTinh);
 
         JLabel lblGioiTinh = new JLabel("Giới Tính: ");
         pnGioiTinh.add(lblGioiTinh);
 
-        txtGioiTinh = new JTextField(30);
-        pnGioiTinh.add(txtGioiTinh);
+        radNam = new JRadioButton("Nam");
+        radNu = new JRadioButton("Nữ");
+
+        ButtonGroup groupGioiTinh = new ButtonGroup();
+        groupGioiTinh.add(radNam);
+        groupGioiTinh.add(radNu);
+
+        pnGioiTinh.add(radNam);
+        pnGioiTinh.add(radNu);
 
         JPanel pnSoDT = new JPanel();
         pnSoDT.setLayout(new FlowLayout());
@@ -192,11 +201,16 @@ public class UIEditInfo extends JFrame {
         txtMaSo.setText(cb.getMaNV());
         txtHoTen.setText(cb.getTeNV());
         txtNgaySinh.setText(cb.getNgaySinh().toString());
-        txtGioiTinh.setText(cb.isGioiTinh() ? "Nam" : "Nữ");
         txtSoDT.setText(cb.getSoDT());
         txtEmail.setText(cb.getEmail());
         txtPhongBan.setText(cb.getPhongBan());
         txtChucVu.setText(cb.getChucVu());
+
+        if(cb.isGioiTinh()) {
+            radNam.setSelected(true);
+        } else {
+            radNu.setSelected(true);
+        }
 
     }
 
@@ -208,19 +222,25 @@ public class UIEditInfo extends JFrame {
 
                 String hoten = txtHoTen.getText().trim();
                 String ngaysinh = txtNgaySinh.getText().trim();
-                String gioitinh = txtGioiTinh.getText().toLowerCase();
                 String sodt = txtSoDT.getText().trim();
                 String email = txtEmail.getText().trim();
                 String phongban = txtPhongBan.getText().trim();
                 String chucvu = txtChucVu.getText().trim();
 
                 if(
-                        !hoten.equals("") && !ngaysinh.equals("") && !gioitinh.equals("") && !sodt.equals("")
+                        !hoten.equals("") && !ngaysinh.equals("") && !sodt.equals("")
                                 && !email.equals("") && !phongban.equals("") && !chucvu.equals("")
                 ) {
 
 
-                    boolean gt = gioitinh.toLowerCase().equals("nam") ? true : false;
+                    boolean gt = false;
+                    if(radNam.isSelected()) {
+                        gt = true;
+                    }
+
+                    if(radNu.isSelected()) {
+                        gt = false;
+                    }
 
                     DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
                     java.util.Date date = null;
