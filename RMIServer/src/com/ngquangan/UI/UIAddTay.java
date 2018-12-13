@@ -15,13 +15,15 @@ public class UIAddTay extends JFrame {
 
     JTextField txtHoTen;
     JTextField txtNgaySinh;
-    JTextField txtGioiTinh;
     JTextField txtSoDT;
     JTextField txtEmail;
     JTextField txtPhongBan;
     JTextField txtChucVu;
     JTextField txtUsername;
     JTextField txtPassword;
+
+    JRadioButton radNam;
+    JRadioButton radNu;
 
     JButton btnThem;
     JButton btnHuyBo;
@@ -78,14 +80,21 @@ public class UIAddTay extends JFrame {
         pnNgaySinh.add(txtNgaySinh);
 
         JPanel pnGioiTinh = new JPanel();
-        pnGioiTinh.setLayout(new FlowLayout());
+        pnGioiTinh.setLayout(new BoxLayout(pnGioiTinh, BoxLayout.X_AXIS));
         pnCenter.add(pnGioiTinh);
 
         JLabel lblGioiTinh = new JLabel("Giới Tính: ");
         pnGioiTinh.add(lblGioiTinh);
 
-        txtGioiTinh = new JTextField(30);
-        pnGioiTinh.add(txtGioiTinh);
+        radNam = new JRadioButton("Nam");
+        radNu = new JRadioButton("Nữ");
+
+        ButtonGroup groupGioiTinh = new ButtonGroup();
+        groupGioiTinh.add(radNam);
+        groupGioiTinh.add(radNu);
+
+        pnGioiTinh.add(radNam);
+        pnGioiTinh.add(radNu);
 
         JPanel pnSoDT = new JPanel();
         pnSoDT.setLayout(new FlowLayout());
@@ -161,6 +170,10 @@ public class UIAddTay extends JFrame {
         btnHuyBo = new JButton("Trở về");
         pnButton.add(btnHuyBo);
 
+        //set data for giới tính
+
+        radNam.setSelected(true);
+
     }
 
     public void addEvents() {
@@ -170,7 +183,6 @@ public class UIAddTay extends JFrame {
 
                 String hoten = txtHoTen.getText().trim();
                 String ngaysinh = txtNgaySinh.getText().trim();
-                String gioitinh = txtGioiTinh.getText().toLowerCase();
                 String sodt = txtSoDT.getText().trim();
                 String email = txtEmail.getText().trim();
                 String phongban = txtPhongBan.getText().trim();
@@ -181,7 +193,7 @@ public class UIAddTay extends JFrame {
                 String macanbo = "cb_" + System.currentTimeMillis();
 
                 if(
-                        !hoten.equals("") && !ngaysinh.equals("") && !gioitinh.equals("") && !sodt.equals("")
+                        !hoten.equals("") && !ngaysinh.equals("") && !sodt.equals("")
                         && !email.equals("") && !phongban.equals("") && !chucvu.equals("") && !username.equals("")
                         && !password.equals("")
                 ) {
@@ -195,7 +207,14 @@ public class UIAddTay extends JFrame {
                             JOptionPane.showMessageDialog(null, "Đã xãy ra lỗi ở hệ thống, vui lòng thử lại sau!");
                         }
 
-                        boolean gt = gioitinh.toLowerCase().equals("nam") ? true : false;
+                        boolean gt = false;
+                        if(radNam.isSelected()) {
+                            gt = true;
+                        }
+
+                        if(radNu.isSelected()) {
+                            gt = false;
+                        }
 
                         DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
                         java.util.Date date = formatter.parse(ngaysinh);
