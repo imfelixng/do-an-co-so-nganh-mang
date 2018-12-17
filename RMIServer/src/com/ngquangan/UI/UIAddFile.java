@@ -109,10 +109,18 @@ public class UIAddFile extends JFrame {
         btnThem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                if(file == null) {
+                    JOptionPane.showMessageDialog(null, "Vui lòng chọn file exel!");
+                    return;
+                }
+
                 if(file.getAbsolutePath().endsWith(".xls")) {
 
                     System.out.println("Bạn chọn file .xls");
                     ArrayList<CanBo> canBos = ReadExel.getDataFromXLS(file);
+
+
 
                     for(CanBo cb: canBos) {
 
@@ -124,6 +132,9 @@ public class UIAddFile extends JFrame {
                             if (cnn == null) {
                                 JOptionPane.showMessageDialog(null, "Đã xãy ra lỗi ở hệ thống, vui lòng thử lại sau!");
                             }
+
+
+
 
 
                             long dateInLong = cb.getNgaySinh().getTime();

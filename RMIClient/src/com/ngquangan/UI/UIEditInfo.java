@@ -1,5 +1,6 @@
 package com.ngquangan.UI;
 
+import com.ngquangan.Functional.ValidateData;
 import com.ngquangan.bean.CanBo;
 import com.ngquangan.interfaces.ServerInterface;
 import org.jdatepicker.impl.JDatePanelImpl;
@@ -248,45 +249,85 @@ public class UIEditInfo extends JFrame {
                 ) {
 
 
-                    boolean gt = false;
-                    if(radNam.isSelected()) {
-                        gt = true;
+                    boolean check = false;
+                    String error = "";
+
+                    if(!ValidateData.checkTenCanBo(hoten).equals("")) {
+                        error += ValidateData.checkTenCanBo(hoten) + "\n";
+                        check = true;
                     }
 
-                    if(radNu.isSelected()) {
-                        gt = false;
+                    if(!ValidateData.checkSoDT(sodt).equals("")) {
+                        error += ValidateData.checkSoDT(sodt) + "\n";
+                        check = true;
+                    }
+
+                    if(!ValidateData.checkEmail(email).equals("")) {
+                        error += ValidateData.checkEmail(email) + "\n";
+                        check = true;
+                    }
+
+                    if(!ValidateData.checkPhongBan(phongban).equals("")) {
+                        error += ValidateData.checkPhongBan(phongban) + "\n";
+                        check = true;
+                    }
+
+                    if(!ValidateData.checkChucVu(chucvu).equals("")) {
+                        error += ValidateData.checkChucVu(chucvu) + "\n";
+                        check = true;
                     }
 
 
-                    Date selectedDate = (Date) datePicker.getModel().getValue();
-                    java.sql.Date date = new java.sql.Date(selectedDate.getTime());
+                    if(!check) {
 
-
-
-                    CanBo canBo = new CanBo();
-
-                    canBo.setTeNV(hoten);
-                    canBo.setNgaySinh(date);
-                    canBo.setGioiTinh(gt);
-                    canBo.setSoDT(sodt);
-                    canBo.setEmail(email);
-                    canBo.setPhongBan(phongban);
-                    canBo.setChucVu(chucvu);
-                    canBo.setUsername(username);
-
-                    try {
-                        boolean checkUpdate = serverInterface.updateInfo(canBo);
-                        if(checkUpdate) {
-                            UIInfo uiInfo = new UIInfo("Thông tin cá nhân",username);
-                            uiInfo.showWindow();
-                            dispose();
-                        } else {
-                            JOptionPane.showMessageDialog(null, "Đã xảy ra lỗi, vui lòng thử lại sau!");
+                        boolean gt = false;
+                        if(radNam.isSelected()) {
+                            gt = true;
                         }
-                    } catch (RemoteException e1) {
-                        e1.printStackTrace();
-                    }
 
+                        if(radNu.isSelected()) {
+                            gt = false;
+                        }
+
+
+                        Date selectedDate = (Date) datePicker.getModel().getValue();
+                        java.sql.Date date = new java.sql.Date(selectedDate.getTime());
+
+
+
+                        CanBo canBo = new CanBo();
+
+                        canBo.setTeNV(hoten);
+                        canBo.setNgaySinh(date);
+                        canBo.setGioiTinh(gt);
+                        canBo.setSoDT(sodt);
+                        canBo.setEmail(email);
+                        canBo.setPhongBan(phongban);
+                        canBo.setChucVu(chucvu);
+                        canBo.setUsername(username);
+
+                        try {
+                            boolean checkUpdate = serverInterface.updateInfo(canBo);
+                            if(checkUpdate) {
+                                UIInfo uiInfo = new UIInfo("Thông tin cá nhân",username);
+                                uiInfo.showWindow();
+                                dispose();
+                            } else {
+                                JOptionPane.showMessageDialog(null, "Đã xảy ra lỗi, vui lòng thử lại sau!");
+                            }
+                        } catch (RemoteException e1) {
+                            e1.printStackTrace();
+                        }
+
+                        UIInfo uiInfo = new UIInfo("Thông tin cá nhân",username);
+                        uiInfo.showWindow();
+                        dispose();
+
+                    } else {
+                        JOptionPane.showMessageDialog(null, error);
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Vui lòng điền đầy đủ thông tin");
                 }
 
             }

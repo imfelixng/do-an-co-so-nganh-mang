@@ -15,7 +15,5 @@ public interface ServerInterface extends Remote {
 
     public CanBo getInfo(String username) throws RemoteException;
 
-    public ServerInterface getClient() throws RemoteException;
-
-
+    
 }

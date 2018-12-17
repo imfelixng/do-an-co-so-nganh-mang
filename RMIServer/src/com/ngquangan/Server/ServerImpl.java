@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class ServerImpl extends UnicastRemoteObject implements ServerInterface {
 
@@ -225,4 +226,41 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterface {
         }
 
     }
+
+    public static ArrayList<String> getUsernames () {
+
+        Connection cnn = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet rs = null;
+        ArrayList<String> usernames = new ArrayList<>();
+
+        try {
+            cnn = ConnectDB.connectDB();
+            if(cnn == null) return usernames;
+
+            String sql = "SELECT Username from nhanvien";
+
+            preparedStatement = cnn.prepareStatement(sql);
+            rs = preparedStatement.executeQuery();
+
+            while (rs.next()) {
+                usernames.add(rs.getString("Username"));
+            }
+
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                ConnectDB.closeConnection(cnn, preparedStatement, rs);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            return usernames;
+        }
+
+    }
+
 }

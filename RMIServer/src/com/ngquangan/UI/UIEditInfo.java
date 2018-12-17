@@ -1,5 +1,6 @@
 package com.ngquangan.UI;
 
+import com.ngquangan.Funtional.ValidateData;
 import com.ngquangan.Server.ConnectDB;
 import com.ngquangan.Server.ServerImpl;
 import com.ngquangan.bean.CanBo;
@@ -19,6 +20,7 @@ import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
@@ -241,77 +243,114 @@ public class UIEditInfo extends JFrame {
                                 && !email.equals("") && !phongban.equals("") && !chucvu.equals("")
                 ) {
 
+                    boolean check = false;
+                    String error = "";
 
-                    boolean gt = false;
-                    if(radNam.isSelected()) {
-                        gt = true;
+                    if(!ValidateData.checkTenCanBo(hoten).equals("")) {
+                        error += ValidateData.checkTenCanBo(hoten) + "\n";
+                        check = true;
                     }
 
-                    if(radNu.isSelected()) {
-                        gt = false;
+                    if(!ValidateData.checkSoDT(sodt).equals("")) {
+                        error += ValidateData.checkSoDT(sodt) + "\n";
+                        check = true;
                     }
 
-                    Date selectedDate = (Date) datePicker.getModel().getValue();
-                    java.sql.Date date = new java.sql.Date(selectedDate.getTime());
+                    if(!ValidateData.checkEmail(email).equals("")) {
+                        error += ValidateData.checkEmail(email) + "\n";
+                        check = true;
+                    }
 
-                    CanBo canBo = new CanBo();
+                    if(!ValidateData.checkPhongBan(phongban).equals("")) {
+                        error += ValidateData.checkPhongBan(phongban) + "\n";
+                        check = true;
+                    }
 
-                    canBo.setTeNV(hoten);
-                    canBo.setNgaySinh(date);
-                    canBo.setGioiTinh(gt);
-                    canBo.setSoDT(sodt);
-                    canBo.setEmail(email);
-                    canBo.setPhongBan(phongban);
-                    canBo.setChucVu(chucvu);
-                    canBo.setUsername(username);
+                    if(!ValidateData.checkChucVu(chucvu).equals("")) {
+                        error += ValidateData.checkChucVu(chucvu) + "\n";
+                        check = true;
+                    }
 
-                    boolean checkUpdate = server.updateInfo(canBo);
 
-                    if(checkUpdate) {
-                        System.out.println("Update thông tin can bo thanh cong");
-                        if(!password.equals("")) {
+                    if(!check) {
 
-                            Connection cnn = null;
-                            PreparedStatement preparedStatement = null;
-                            ResultSet rs = null;
-
-                            try {
-                                cnn = ConnectDB.connectDB();
-
-                                if(cnn == null) {
-                                    JOptionPane.showMessageDialog(null, "Có lỗi xãy ra khi đổi mật khẩu, vui lòng thử lại sau!");
-                                    return;
-                                }
-
-                                String sql = "UPDATE user SET Password = ? WHERE Username = ?";
-                                preparedStatement = cnn.prepareStatement(sql);
-                                preparedStatement.setString(1, password);
-                                preparedStatement.setString(2, username);
-
-                                int updatedRow = preparedStatement.executeUpdate();
-
-                                if(updatedRow > 0) {
-                                    System.out.println("Thay đổi mật khẩu thành công!");
-                                }
-
-                            } catch (ClassNotFoundException e1) {
-                                e1.printStackTrace();
-                            } catch (SQLException e1) {
-                                e1.printStackTrace();
-                            }
-
+                        boolean gt = false;
+                        if(radNam.isSelected()) {
+                            gt = true;
                         }
 
-                        UIInfo uiInfo = new UIInfo("Thông tin cá nhân", username);
+                        if(radNu.isSelected()) {
+                            gt = false;
+                        }
+
+                        Date selectedDate = (Date) datePicker.getModel().getValue();
+                        java.sql.Date date = new java.sql.Date(selectedDate.getTime());
+
+                        CanBo canBo = new CanBo();
+
+                        canBo.setTeNV(hoten);
+                        canBo.setNgaySinh(date);
+                        canBo.setGioiTinh(gt);
+                        canBo.setSoDT(sodt);
+                        canBo.setEmail(email);
+                        canBo.setPhongBan(phongban);
+                        canBo.setChucVu(chucvu);
+                        canBo.setUsername(username);
+
+                        boolean checkUpdate = server.updateInfo(canBo);
+
+                        if(checkUpdate) {
+                            System.out.println("Update thông tin can bo thanh cong");
+                            if(!password.equals("")) {
+
+                                Connection cnn = null;
+                                PreparedStatement preparedStatement = null;
+                                ResultSet rs = null;
+
+                                try {
+                                    cnn = ConnectDB.connectDB();
+
+                                    if(cnn == null) {
+                                        JOptionPane.showMessageDialog(null, "Có lỗi xãy ra khi đổi mật khẩu, vui lòng thử lại sau!");
+                                        return;
+                                    }
+
+                                    String sql = "UPDATE user SET Password = ? WHERE Username = ?";
+                                    preparedStatement = cnn.prepareStatement(sql);
+                                    preparedStatement.setString(1, password);
+                                    preparedStatement.setString(2, username);
+
+                                    int updatedRow = preparedStatement.executeUpdate();
+
+                                    if(updatedRow > 0) {
+                                        System.out.println("Thay đổi mật khẩu thành công!");
+                                    }
+
+                                } catch (ClassNotFoundException e1) {
+                                    e1.printStackTrace();
+                                } catch (SQLException e1) {
+                                    e1.printStackTrace();
+                                }
+
+                            }
+
+                            UIInfo uiInfo = new UIInfo("Thông tin cá nhân", username);
+                            uiInfo.showWindow();
+                            dispose();
+                        }
+
+                        UIInfo uiInfo = new UIInfo("Thông tin cán bộ", username);
                         uiInfo.showWindow();
                         dispose();
+
+                    } else {
+                        JOptionPane.showMessageDialog(null, error);
                     }
+
+                } else {
+                    JOptionPane.showMessageDialog(null, "Vui lòng điền đầy đủ thông tin");
                 }
 
-
-                UIInfo uiInfo = new UIInfo("Thông tin cán bộ", username);
-                uiInfo.showWindow();
-                dispose();
             }
         });
 

@@ -1,0 +1,3 @@
+/Users/ngquangan/Desktop/ds-canbo.xlsx
+Dòng 1: Giới tính không được để trống
+Dòng 4: Ngày sinh không đúng định dạng

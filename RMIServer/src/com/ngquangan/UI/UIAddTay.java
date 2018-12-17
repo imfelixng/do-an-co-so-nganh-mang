@@ -1,6 +1,8 @@
 package com.ngquangan.UI;
 
+import com.ngquangan.Funtional.ValidateData;
 import com.ngquangan.Server.ConnectDB;
+import com.ngquangan.Server.ServerImpl;
 import org.jdatepicker.impl.JDatePanelImpl;
 import org.jdatepicker.impl.JDatePickerImpl;
 import org.jdatepicker.impl.UtilDateModel;
@@ -13,6 +15,7 @@ import java.sql.*;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Properties;
 
 public class UIAddTay extends JFrame {
@@ -193,7 +196,6 @@ public class UIAddTay extends JFrame {
         btnThem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 String hoten = txtHoTen.getText().trim();
                 String sodt = txtSoDT.getText().trim();
                 String email = txtEmail.getText().trim();
@@ -204,81 +206,123 @@ public class UIAddTay extends JFrame {
                 boolean online  = false;
                 String macanbo = "cb_" + System.currentTimeMillis();
 
-                if(
+                if(     datePicker.getModel().getValue() != null &&
                         !hoten.equals("") && !sodt.equals("")
                         && !email.equals("") && !phongban.equals("") && !chucvu.equals("") && !username.equals("")
                         && !password.equals("")
                 ) {
 
-                    Connection cnn = null;
-                    PreparedStatement preparedStatement = null;
-                    ResultSet resultSet = null;
-                    try {
-                        cnn = ConnectDB.connectDB();
-                        if(cnn == null) {
-                            JOptionPane.showMessageDialog(null, "Đã xãy ra lỗi ở hệ thống, vui lòng thử lại sau!");
-                        }
+                    boolean check = false;
+                    String error = "";
 
-                        boolean gt = false;
-                        if(radNam.isSelected()) {
-                            gt = true;
-                        }
+                    if(!ValidateData.checkTenCanBo(hoten).equals("")) {
+                        error += ValidateData.checkTenCanBo(hoten) + "\n";
+                        check = true;
+                    }
 
-                        if(radNu.isSelected()) {
-                            gt = false;
-                        }
+                    if(!ValidateData.checkSoDT(sodt).equals("")) {
+                        error += ValidateData.checkSoDT(sodt) + "\n";
+                        check = true;
+                    }
 
-                        java.util.Date selectedDate = (java.util.Date) datePicker.getModel().getValue();
-                        java.sql.Date date = new java.sql.Date(selectedDate.getTime());
+                    if(!ValidateData.checkEmail(email).equals("")) {
+                        error += ValidateData.checkEmail(email) + "\n";
+                        check = true;
+                    }
 
-                        String sql = "INSERT INTO nhanvien VALUES (?,?,?,?,?,?,?,?,?,?)";
+                    if(!ValidateData.checkPhongBan(phongban).equals("")) {
+                        error += ValidateData.checkPhongBan(phongban) + "\n";
+                        check = true;
+                    }
 
-                        preparedStatement = cnn.prepareStatement(sql);
-                        preparedStatement.setString(1, macanbo);
-                        preparedStatement.setString(2, hoten);
-                        preparedStatement.setDate(3, date);
-                        preparedStatement.setBoolean(4, gt);
-                        preparedStatement.setString(5, sodt);
-                        preparedStatement.setString(6, email);
-                        preparedStatement.setString(7, phongban);
-                        preparedStatement.setString(8, chucvu);
-                        preparedStatement.setString(9, username);
-                        preparedStatement.setBoolean(10, online);
+                    if(!ValidateData.checkChucVu(chucvu).equals("")) {
+                        error += ValidateData.checkChucVu(chucvu) + "\n";
+                        check = true;
+                    }
 
-                        int executeUpdate = preparedStatement.executeUpdate();
+                    ArrayList<String> usernames = ServerImpl.getUsernames();
 
-                        if(executeUpdate > 0) {
-                            preparedStatement = null;
-                            String sql_user = "INSERT INTO user values(?,?,?)";
-                            preparedStatement = cnn.prepareStatement(sql_user);
-                            preparedStatement.setString(1, username);
-                            preparedStatement.setString(2, password);
-                            preparedStatement.setInt(3, 0);
+                    if(!ValidateData.checkUsername(username, usernames).equals("")) {
+                        error += ValidateData.checkUsername(username, usernames) + "\n";
+                        check = true;
+                    }
 
-                            int executeUpdateUser = preparedStatement.executeUpdate();
 
-                            if(executeUpdateUser > 0) {
-                                UIManage uiManage = new UIManage("Quản lý cán bộ");
-                                uiManage.showWindow();
-                                dispose();
+                    if(!check) {
+                        Connection cnn = null;
+                        PreparedStatement preparedStatement = null;
+                        ResultSet resultSet = null;
+                        try {
+                            cnn = ConnectDB.connectDB();
+                            if(cnn == null) {
+                                JOptionPane.showMessageDialog(null, "Đã xãy ra lỗi ở hệ thống, vui lòng thử lại sau!");
                             }
 
-                        } else {
-                            JOptionPane.showMessageDialog(null, "Thêm cán bộ thất bại, vui lòng thử lại sau!");
-                        }
+                            boolean gt = false;
+                            if(radNam.isSelected()) {
+                                gt = true;
+                            }
+
+                            if(radNu.isSelected()) {
+                                gt = false;
+                            }
+
+                            java.util.Date selectedDate = (java.util.Date) datePicker.getModel().getValue();
+                            java.sql.Date date = new java.sql.Date(selectedDate.getTime());
+
+                            String sql = "INSERT INTO nhanvien VALUES (?,?,?,?,?,?,?,?,?,?)";
+
+                            preparedStatement = cnn.prepareStatement(sql);
+                            preparedStatement.setString(1, macanbo);
+                            preparedStatement.setString(2, hoten);
+                            preparedStatement.setDate(3, date);
+                            preparedStatement.setBoolean(4, gt);
+                            preparedStatement.setString(5, sodt);
+                            preparedStatement.setString(6, email);
+                            preparedStatement.setString(7, phongban);
+                            preparedStatement.setString(8, chucvu);
+                            preparedStatement.setString(9, username);
+                            preparedStatement.setBoolean(10, online);
+
+                            int executeUpdate = preparedStatement.executeUpdate();
+
+                            if(executeUpdate > 0) {
+                                preparedStatement = null;
+                                String sql_user = "INSERT INTO user values(?,?,?)";
+                                preparedStatement = cnn.prepareStatement(sql_user);
+                                preparedStatement.setString(1, username);
+                                preparedStatement.setString(2, password);
+                                preparedStatement.setInt(3, 0);
+
+                                int executeUpdateUser = preparedStatement.executeUpdate();
+
+                                if(executeUpdateUser > 0) {
+                                    UIManage uiManage = new UIManage("Quản lý cán bộ");
+                                    uiManage.showWindow();
+                                    dispose();
+                                }
+
+                            } else {
+                                JOptionPane.showMessageDialog(null, "Thêm cán bộ thất bại, vui lòng thử lại sau!");
+                            }
 
 
-                    } catch (ClassNotFoundException e1) {
-                        e1.printStackTrace();
-                    } catch (SQLException e1) {
-                        e1.printStackTrace();
-                    } finally {
-                        try {
-                            ConnectDB.closeConnection(cnn, preparedStatement, resultSet);
+                        } catch (ClassNotFoundException e1) {
+                            e1.printStackTrace();
                         } catch (SQLException e1) {
                             e1.printStackTrace();
+                        } finally {
+                            try {
+                                ConnectDB.closeConnection(cnn, preparedStatement, resultSet);
+                            } catch (SQLException e1) {
+                                e1.printStackTrace();
+                            }
                         }
+
+                    } else {
+                        JOptionPane.showMessageDialog(null, error);
                     }
+
 
                 } else {
 
